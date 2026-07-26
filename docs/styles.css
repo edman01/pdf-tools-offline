@@ -249,6 +249,7 @@ h3 {
 }
 
 .button:focus-visible,
+.menu-button:focus-visible,
 .site-nav a:focus-visible,
 .brand:focus-visible,
 .text-link:focus-visible,
@@ -271,6 +272,16 @@ summary:focus-visible {
   color: var(--ink);
   background: #fff;
   border-color: var(--line);
+}
+
+.availability-label {
+  min-height: 52px;
+  display: inline-flex;
+  align-items: center;
+  padding: 13px 2px;
+  color: var(--muted);
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .trust-list {
@@ -425,7 +436,7 @@ summary:focus-visible {
 
 .feature-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
 
@@ -730,6 +741,13 @@ details p {
   font-size: clamp(32px, 4vw, 48px);
 }
 
+.cta-copy {
+  max-width: 620px;
+  margin: 12px 0 0;
+  color: var(--muted);
+  font-size: 15px;
+}
+
 .site-footer {
   padding: 34px 0;
   border-top: 1px solid var(--line);
@@ -878,7 +896,7 @@ details p {
 
 .support-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 18px;
 }
 
